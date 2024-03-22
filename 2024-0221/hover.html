@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hover</title>
+
+    <style>
+        *{margin: 0;padding: 0;}
+
+        .box {
+            width: 100px;height: 100px;
+            background-color: pink;
+            transition: 0.3s; 
+            /* 마우스를갖다댔을때애니메이션을주고싶을때 transition */
+        }
+        .box:hover{
+            /* width: 200px;height: 200px; */
+            background-color: blue;
+            box-shadow: 0 0 20px rgba(0,0,0,1);
+            color: white;
+        }
+
+        a:hover{
+            font-size: 2em;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        test
+    </div>
+    <a href="#">test</a>
+
+</body>
+</html>

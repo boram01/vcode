@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;padding: 0; box-sizing: border-box;
+        }
+
+        a:link, a:visited {
+            text-decoration: none; color:#333;
+        }
+
+        ul,li {
+            list-style: none;
+        }
+
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .layer {
+            display: flex;
+            gap: 10px;
+        }
+
+        .layer > li {
+            width: 300px;
+        }
+
+        .layer img {
+            width: 100%;
+        }
+
+        .galyLayer {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.3);
+            /* opacity: 0.3; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .overLayer {
+            display: flex;
+            flex-direction:  column;
+        }
+
+        .closeWrap {
+            display: flex;
+            justify-content: end;
+            font-size: 1.5em;
+            color: red;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <ul class="layer">
+        <li>
+            <a href="../2024-0321/img/img1.jpg" class="modal" ></a>
+            <img src="../2024-0321/img/img1.jpg"></a>
+        </li>
+        <li>
+            <a href="../2024-0321/img/img2.jpg" class="modal"></a>
+            <img src="../2024-0321/img/img2.jpg"></a>
+        </li>
+        <li>
+            <a href="../2024-0321/img/img3.jpg" class="modal"></a>
+            <img src="../2024-0321/img/img3.jpg"></a>
+        </li>
+    </ul>
+
+    <div class="glayLayer">
+        <div class="overLayer">
+            <a class="closeWrap">
+                <hr href=""><i class="fa-solid fa-xmark"></i>
+            </a>
+            </div>
+            <img src="../2024-0321/img/img1.jpg" alt=""/>
+        </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" >
+    </script>
+
+    <script>
+        $(".modal") .click(function (event) {  
+            // event.preventDefault();
+            // alert("test");
+            let aModal = $(this) .attr("href");  //클릭시 이미지경로 가지고 오기
+            console.log(aModal);
+        });
+        
+        let fruit = ["apple","orange", "graph"]
+
+        let txt = "";
+        fruit.forEach(function(item,i) {
+            console.log(item);
+            text += item
+        });
+        console.log(txt);
+
+        for (let i=0; i < friut.length; i++) {
+            console.log(fruit[i]);
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+
+html,body{height: 100%;}
+body{display: flex;justify-content: center; align-items: center;}
+
+/* imgView{
+    position: absolute;
+    left: 50%;top: 50%;
+    margin-left: -152px;,margin-top: -218px;
+}
+ */
+
+ /* imgView{
+    position: absolute;
+    left: 50%;top: 50%;
+    transform: translate(-50%,-50%) ; 
+ } */
+ /* .imgView{transition:0.3s;}
+ .imgView:hover{
+    transform: scale(1.2);
+ } */
+ .imgView1{overflow: hidden;}
+ .imgView1 > img{transition: 0.3s;}
+ .imgView1 > .imgView:hover{
+    transform: scale(1.2);
+ }
+
+ .imgView2{}

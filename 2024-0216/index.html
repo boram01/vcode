@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이미지삽입하기</title>
+    <style>
+        img{display:block} 
+        /* img tag는 인라인태그지만 블록단위로도 바꿔줄수있다 */ 
+
+        /* .img1{display:inline;} 
+          여러img tag들 중에서 class를 이용해서 일부만 단위를 바꿔줄수있다 
+           class의 표시는 .으로해줄수있다 */
+        
+        /* body>img.pic{}
+        body>.pic{}
+        .pic{} */
+
+        body > div.imgwrap{
+            background-color: skyblue;
+            width:200px;
+            margin-left: auto; 
+            margin-right: auto;
+            /* margin:속성의 여백, top, bottom, right, left
+               auto:줄수있는 margin의 최대값 
+               margin left와 right를 둘다 auto로 주면 가운데값으로 이동*/
+
+            /* margin: 0 auto 0 auto 의 경우
+                     top bottom right left 를 한번에 표시해준거 */
+        }
+
+        div.imgwrap > a > img{
+            width:100%;
+            display:block;
+        }
+        /* >로표시할 경우 바로 밑에 있는 자식태그
+            띄어쓰기로 표시할 경우 자식태그밑에 자손태그들까지 포함하여 
+            그 안에 태그들 중에 선택할 때 
+
+        /* div.imgwarp{background-color:skyblue} 위 표현과 동일한 의미*/
+    </style>
+</head>
+<body>
+    test
+    <div class="imgwrap">
+        <a href="https://www.naver.com" target="_self">test</a>
+        <img src="view.jpg"alt="구름"width="100"height="100"class="img1">
+    </div>
+    <img src="view.jpg"alt="구름"class="pic1">
+    <img src="view.jpg"alt="구름">
+</body>
+</html>

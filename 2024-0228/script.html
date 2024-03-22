@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <script>
+        var first = "choi";
+        var last = "boram";
+        var name = first + last;
+        document.write("안녕하세요" + name + "입니다<br>")
+        document.write("HI~" + name + "님 안녕하세요")
+    </script>
+
+    <script>
+        var x=5;
+        var y=7;
+        var result;
+
+        // result = (x>y) ? true:false;
+        // ()안에내용이 true이면 true, false이면 false 값이 도출
+        result = (x>y) ? x:y;
+        // x가y보다크면 x값이 도출, 크지않으면 y값이 도출
+        console.log(result)
+        // 7 
+        // console은 웹브라우저->f12->console 창에서 확인가능
+
+    //    var x=10;
+    //    var y=5;
+    //    var result;
+    //     result = (x>y) ? x:y;
+    //     console.log(result) 로 하면 true기 때문에 x가 도출 따라서 10이 도출
+
+
+    if(x>y){
+        result = x //true
+        title = "x";
+    }else{
+        result = y //false
+        title = "y" 
+    }
+    // // 결과값이 true일때와 false일때도 값을 도출하고 싶을때
+    // if(조건문){
+    //     true실행;
+    // }else{
+    //     false실행;
+    // }
+
+
+    // if(조건문1){
+    //     조건문1 true일때 실행
+    // } else if(조건문2){
+    //     조건문2가 true일때 실행;
+    // }else{
+    //     둘다 false일때 실행
+    // }
+
+
+    console.log("큰값은" + title + "이고 값은" + result + "입니다")
+    console.log('큰값은 ${title} 이고 값은 ${result} 입니다.')
+
+    </script>
+
+    <script>
+        var xNum = 10;
+        xNum += 100; //xNum = xNum + 100;
+        alert(xNum)
+        console.log(xNum)
+
+        var myname = "홍길동"
+        myname += "입니다" //myname = myname + "입니다"
+        myname += "!!"
+        console.log(myname)
+
+    </script>
+
+    <!-- <script>
+        var id,password;
+        id = prompt('아이디입력')
+    if(id == "admin"){
+        password = prompt('비밀번호입력')
+        if(password == '123'){
+            location.href = "login.html"
+        }else{
+            location.href = "error.html"
+        }
+    }else{
+        location.href = "error.html"
+    }
+
+    </script> -->
+<br>
+    <script>
+        var day;
+        const d = new Date().getDay()
+        console.log(d)
+        switch(d){
+            case 0:
+                day = "일요일"
+                hobby = "운동"
+                break;
+            case 1:
+                day = "월요일"
+                hobby = "게임"
+                break;
+            case 2:
+                day = "화요일"
+                hobby = "자바스크립트"
+                break;
+            case 3:
+                day = "수요일"
+                hobby = "피그마"
+                break;
+            case 4:
+                day = "목요일"
+                hobby = "노드"
+                break;
+            case 5:
+                day = "금요일"
+                break;
+            case 6:
+                day = "토요일"
+                break;
+        }
+        
+        
+        document.write("오늘은" + day + "입니다 그리고 " + hobby + " 하는 날입니다")
+    </script>
+
+
+</body>
+</html>

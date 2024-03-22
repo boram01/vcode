@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <script>
+        var test = 1;
+        test = 100;
+        var test = 10;   //명령
+
+        console.log(test);
+
+        let num = 10;
+        num = 100;
+        // let num = 10; //이런 경우는 재명령x, Err
+        console.log("num: " + num);
+
+        const result = 1000;
+            //   result = 10;  //Err-> onst는 변화되지않는 값을 쓸 때 사용(고정)
+
+        console.log(result);
+
+
+        // 중괄호 {}쓰는 함수 : function, for문, 
+        //             function(){}
+        //             for(){}
+
+
+        function fn() {
+            let han = "안녕하세요";
+            console.log(han);
+        }
+        fn();
+
+        console.log(han);  //Err  -> let은 {}안에서만 사용가능
+    </script> -->
+
+    <script>
+        let myCalc = new Promise (function (resolve,reject) {
+            // resolve(100)
+            // reject(); //undefined 
+
+            
+            let han = "test";
+            let sum = 1000 + 100;
+            if(han == "test") {
+                resolve(sum);
+            }else {
+                reject(num);
+            }
+        });
+
+        myCalc 
+            .then(function (num) {
+                console.log("성공");
+            })
+            .catch(function (num) {
+                console.log("실패");
+            })
+        // myClac.than().catch()
+        // then: 성공했을 때 나오는애(resolve)
+        // catch: 거부됐을 때 나오는애(reject)
+
+
+
+
+
+        // async funvtion fn( ){
+        //     retutn "홍길동";    //성공만 도출해내는 애
+        // }
+
+        // fn()
+        // .then(function (name) {
+        //     console.log("안녕하세요" + num);
+        // })
+        // .catch(function () {
+        //     console.log("실패" + num);   //실패했을 때도 도출하고 싶을 때 catch를 이용하여 function을 써준다
+        // });
+
+
+
+        async function fn1() {
+            let myFn = new Promise (function (resolve,reject) {
+                resolve(100);
+                
+            });
+
+            try {
+                let result = await myFn;
+                console.log(result);
+            } catch (error) {
+                console.log("Err!!!!");
+            } 
+            // reject를 쓸경우 답이나오지 않기 때문에 
+            // try-catch문을 이용해서 실패했을 경우의 답이 도출되게해줌
+
+            console.log("실행완료");
+
+        }
+
+        fn1();
+    </script>
+
+
+</body>
+</html>

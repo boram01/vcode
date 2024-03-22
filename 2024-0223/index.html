@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0;padding: 0;box-sizing: border-box;}
+        ul,li{list-style: none;}
+        a:link,a:visited{text-decoration: none; color:black}
+
+        .hwrap{
+            background-color: skyblue;
+        }
+        .hwrap > .header{
+            width: 1280px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+        }
+        .hwrap > h1{
+            
+            
+        }
+        .hwrap >.gnbwrap{
+            width: 400px;
+            background-color: pink;
+        }
+        .hwrap .gnbmenu{
+            display: flex;
+            justify-content: space-between;
+            background-color: green;
+            height: 50px;
+        }
+        .hwrap .gnbmenu > li{
+            background-color: red;
+            width: 25%
+        }
+        .hwrap .gnbmenu > li >a {
+            background-color: indigo; display: block;
+            height: 100%;
+            width: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            transition: 0.3s;
+        }
+        .hwrap .gnbmenu > li >a:hover{
+            background-color: white;
+            color: black;
+        }
+
+        .box{
+            width: 100px; height: 100px;
+            background-color: pink;
+        }
+        .box >a{
+            background-color: blue;
+            display: block;
+            width: 100%;
+            height: 100%;  
+            /* a태그가인라인요소여서 부모태그의 크기만큼 키우려면 block요소로 만들어줘야하고
+            부모태그의 높이가 정해져있어야 자식태그인 a태그의 h값도 줄 수 있다 */
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+            /* line-height: 같은 줄간격의 의미지만 안에 내용이 추가될 경우 block바깥쪽으로 떨어져서 나타난다 */
+        }
+        .box a:hover{
+            background-color: yellow;
+            color: black;
+        }
+    </style>
+    <script>
+
+    </script>
+<body>
+    <div class="hwrap">
+        <div class="header">
+            <h1>logo</h1>
+                <nav class="gnbwrap">
+                    <ul class="gnbmenu">
+                        <li><a href="#">menu1</a></li>
+                        <li><a href="#">menu2</a></li>
+                        <li><a href="#">menu3</a></li>
+                        <li><a href="#">menu4</a></li>
+                        
+                    </ul>
+                   
+                </nav>
+        </div>
+    </div>
+
+    <div class="box">
+        <a href="#">menu1</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{margin: 0;padding: 0;}
+        .box{width: 100px;height: 100px;position: relative;}
+
+        .cPink{background-color: pink;}
+        .cBlue{background-color: blue;}
+        .cOrange{background-color: orange;}
+
+        .b01{left: 10px;top: 10px;z-index: 1;}
+        .b02{}
+        .b03{left: 20px;top: 20px;}
+        /* z-index의 수치값을 높게 주면 다른 개체들보다 위에위치한다 */
+
+        .color {
+            display: flex;
+        } 
+        /* 나란히하고싶을떄 */
+    </style>
+
+</head>
+
+<body>
+    <div class="color">
+        <div class="box cBlue b01"></div>
+        <div class="box cPink b02"></div>
+        <div class="box cOrange b03"></div>
+    </div>
+    
+</body>
+</html>

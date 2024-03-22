@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* * < tag < class < id < inline style(javascript) < !important */
+        *{margin: 0;padding: 0;box-sizing: border-box;}
+        a:link,a:visited{text-decoration: none;color: black;}
+        ul,li{list-style: none;}
+
+        .fwrap{
+            background-color: #171717;
+            min-width: 1280;
+            padding: 64px 0;
+        }
+        .fwrap > .footer{
+            width: 1280px;
+            margin: 0 auto;
+        }
+        .fwrap > .footer > .innerwrap{display: flex;justify-content: space-between;}
+        .fwrap > .footer > .innerwrap > .policy > ul{display: flex;gap: 10px}
+        .fwrap > .footer > .innerwrap > .policy > ul > li{color: #e1e1e1}
+        .fwrap > .footer > .innerwrap > .policy > ul > li > a{color: #e1e1e1}
+
+        .fwrap > .footer > .innerwrap > .sns > ul{display: flex; gap: 20px;}
+        
+        .addr{
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- <address></address> 사이트주소태그에사용(기본폰트사이트:이탈릭체) -->
+    <!-- <address style="font-style: normal;" class="addr">서울시 영등포구</address> -->
+  
+    <div class="fwrap">
+        <div class="footer">
+            <div class="innerwrap">
+                <div class="policy">
+                    <ul>
+                        <li><a href="#">개인정보처리방침</a></li>
+                        <li>|</li>
+                        <li><a href="#">이용동의서</a></li>
+                        <li>|</li>
+                        <li><a href="#">이메일문의</a></li>
+                        <li>|</li>
+                        <li><a href="#">주무관청</a></li>
+                        <li>|</li>
+                        <li><a href="#">국세청</a></li>
+                    
+                    </ul>
+             </div>
+        </div>
+    </div>
+        <div class="sns">
+            <ul>
+                <li><a href="#"><img src="./images/facebook.png" alt="페이스북"></a></li>
+                <li><a href="#"><img src="./images/insta.png" alt="인스타그램"></a></li>
+                <li><a href="#"><img src="./images/youtube.png" alt="유투브"></a></li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documenta</title>
+    <style>
+        .cardwrap{
+            display: flex;
+            background-color: green;
+            justify-content: space-around;
+        }
+        .card{
+            width: 50px;
+            background-color: brown;
+        }
+        .box{
+            width: 50px; height: 50px;
+            background-color: skyblue;
+            border-radius: 25px;
+            background-image: url(avatars001.jpg);
+        }
+        p{text-align: center;}
+    </style>
+</head>
+<body>
+    <!-- 
+        div tag: block단위 요소 / 크기값(w.h) 사용 가능
+        span tag: inline단위 요소 / 크기값(w.h) 줄수 없음
+        img tag: inline 요소
+        p tag: block 요소
+     -->
+     <div class="cardwrap">
+        <div class="card">
+            <div class="box"></div>
+            <p>name</p>
+         </div>
+         <div class="card">
+            <div class="box"></div>
+            <p>name</p>
+         </div>
+         <div class="card">
+            <div class="box"></div>
+            <p>name</p>
+         </div>
+     </div>
+    
+    
+
+    <img src="avatars001.jpg" alt="avatar001">
+    <img src="avatars002.jpg" alt="avatar002">
+    <img src="avatars003.jpg" alt="avatar003">
+    <img src="avatars004.jpg" alt="avatar004">
+    <img src="avatars005.jpg" alt="avatar005">
+</body>
+</html>
